@@ -1,0 +1,77 @@
+.body_traffic {
+  padding-left: 50px;
+}
+.lights-wrapper {
+  width: 600px;
+  height: 200px;
+  border-radius: 75px;
+  border-top: 3px;
+  border-style: solid;
+  border-top-color: #464646;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  background: linear-gradient(rgb(66, 66, 66) 0%, rgb(12, 12, 12) 100%);
+  box-shadow: 0 0 20px 4px #000000;
+  transition: all ease-in-out 1s;
+
+  &--vertical {
+    position: relative;
+    transform: rotate(90deg);
+    & {
+      border-top: initial;
+      border-left: 3px;
+      border-style: solid;
+      border-left-color: #464646;
+    }
+    .light {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.light {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border-top: 13px;
+  border-style: solid;
+  border-top-color: #464646;
+  transition: all ease-out 1s;
+  &--red {
+    background: linear-gradient(rgb(212, 2, 2) 0%, rgb(255, 0, 0) 100%);
+    box-shadow: 0 0 10px 2px rgb(255, 0, 0);
+  }
+  &--yellow {
+    background: linear-gradient(rgb(255, 208, 0) 0%, rgb(253, 230, 20) 100%);
+    box-shadow: 0 0 10px 2px rgb(253, 230, 20);
+  }
+  &--green {
+    background: linear-gradient(rgb(0, 150, 92) 0%, rgb(0, 190, 117) 100%);
+    box-shadow: 0 0 10px 2px rgb(0, 190, 117);
+  }
+}
+
+.light--off {
+  background: linear-gradient(rgb(87, 87, 87) 0%, rgb(32, 32, 32) 100%);
+  box-shadow: none;
+}
+.traffic_wrapper {
+  display: flex;
+  margin-top: 150px;
+}
+
+.button {
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+  }
+  &-traffic {
+    font-family: "Major mono display";
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px 20px;
+  }
+}

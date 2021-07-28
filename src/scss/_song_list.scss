@@ -1,0 +1,27 @@
+.body {
+  text-align: center;
+  min-height: 100vh;
+
+  background-image: radial-gradient(
+    100% 100% at 50% 50%,
+    rgb(71, 71, 71) 0%,
+    rgb(12, 12, 12) 100%,
+    #545454
+  );
+}
+
+.list {
+  &_wrapper {
+    position: absolute;
+    text-align: left;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &_item {
+    font-family: "Comfortaa";
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin: 20px;
+  }
+}
