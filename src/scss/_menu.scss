@@ -1,0 +1,38 @@
+.menu {
+  list-style-type: none;
+  align-items: center;
+  @include flex-space-between;
+  &__item {
+    text-align: center;
+    padding-bottom: 32px;
+    width: 148px;
+    border-bottom: 2px solid $menu-bg;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__image {
+    margin-bottom: 12px;
+    &--active {
+      display: none;
+      .item--active & {
+        display: inline-block;
+        margin-bottom: 12px;
+      }
+    }
+
+    .item--active & {
+      display: none;
+    }
+  }
+}
+.item--active.menu {
+  &__item {
+    border-bottom: 2px solid $active;
+  }
+}
+
+.basket {
+  padding-bottom: 3px;
+}

@@ -1,0 +1,45 @@
+.card {
+  margin: 0 auto;
+  width: 600px;
+  min-height: 377px;
+  background-color: $card-bg;
+  padding: 42px;
+  @include flex-space-between;
+
+  &-rating {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__wrapper {
+    &-info {
+      padding-left: 31px;
+      &--rating {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__rating--stars {
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__footer {
+    display: flex;
+  }
+
+  &__picture {
+    &--buy {
+      margin-top: 10px;
+    }
+  }
+}
+
+.star {
+  margin: 5px;
+}

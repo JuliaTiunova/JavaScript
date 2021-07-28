@@ -1,0 +1,36 @@
+.info {
+  &__wrapper {
+    &-head {
+      @include flex-space-between;
+    }
+  }
+  &__rating {
+    width: 73px;
+    height: 73px;
+    color: $inactive;
+    font-size: 20px;
+    line-height: 24px;
+    background: url(../../html/31/img/rating_score.png) center center no-repeat;
+    @include flex-center;
+
+    &--rating {
+      width: 120px;
+      height: 120px;
+      background-size: contain;
+      font-size: 36px;
+    }
+  }
+  &__title {
+    margin-bottom: 8px;
+  }
+  &__details {
+    margin-bottom: 33px;
+  }
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  &--stars {
+    margin-bottom: 63px;
+  }
+}

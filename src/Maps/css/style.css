@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form {
+  padding: 50px 40px 0;
+  height: 100%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  font-size: 20px;
+  color: #13576b;
+  -webkit-box-shadow: 0 2px 5px #19718b;
+          box-shadow: 0 2px 5px #19718b;
+  position: relative;
+  z-index: 1;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 0 20px 0 10px;
+  outline: 0;
+  border: 2px solid #2cadd6;
+  border-radius: 10px 25px 25px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  font-size: 18px;
+  height: 45px;
+  color: #13576b;
+}
+
+.input:focus, .input:active {
+  border: 2px solid #19718b;
+}
+
+.button {
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2cadd6), color-stop(51%, #c1e1c3), to(#2cadd6));
+  background-image: linear-gradient(to right, #2cadd6 0%, #c1e1c3 51%, #2cadd6 100%);
+  background-size: 200% auto;
+  color: #ffffff;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: -2px 0 6px 3px #19718b;
+          box-shadow: -2px 0 6px 3px #19718b;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-position: right center;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 0 5px 2px #19718b;
+          box-shadow: 2px 0 5px 2px #19718b;
+}
+
+.button:active, .button:focus {
+  outline: none;
+  border: 1px solid #19718b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

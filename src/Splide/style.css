@@ -1,0 +1,168 @@
+:root {
+  --element-color: #e98457;
+  --text-black: #000;
+  --text-white: #fff;
+  --bg-overlay: rgba(20, 226, 142, 0.9);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 100px 0 160px 140px;
+  min-height: 100vh;
+}
+
+.splide__arrow {
+  background: none;
+  border: none;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY();
+  cursor: pointer;
+}
+
+.splide__arrow:hover {
+  opacity: 0.6;
+}
+
+.splide__arrow--prev {
+  transform: translate(-100%, -50%);
+  left: -20px;
+}
+.splide__arrow--next {
+  transform: translateY(-50%);
+  right: 24px;
+}
+
+.splide__pagination__page {
+  display: none;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 86px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-black);
+  max-width: 1029px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  width: 54px;
+  height: 54px;
+  background: url(img/Vector.svg) center center no-repeat;
+  display: block;
+  position: absolute;
+  left: -32px;
+  bottom: 53px;
+  transform: translateX(-100%);
+}
+
+.title::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(img/Vector_plus.svg) center center no-repeat;
+  display: block;
+  position: absolute;
+  top: -32px;
+  right: 127px;
+  transform: translateY(-100%);
+}
+
+.label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-black);
+  margin-bottom: 18px;
+}
+
+.slider {
+  margin-top: 120px;
+}
+
+.splide__slider {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+  margin: 0 22px;
+  transition: 0.3s;
+  opacity: 0.3;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--bg-overlay);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 30px 31px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.slide:hover .hover {
+  opacity: 1;
+}
+
+.hover-title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-white);
+  margin-bottom: 8px;
+}
+
+.hover-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+.opacity {
+  opacity: 0.3;
+}
+
+.link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #3c3d46;
+  text-transform: uppercase;
+}
+.link--next {
+  top: 50px;
+}
+.link:hover {
+  color: #707181;
+}

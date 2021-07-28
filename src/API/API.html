@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;700&Josefin+Sans:ital,wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Movies</title>
+    <link
+      rel="shortcut icon"
+      href="img/Treetog-I-Video-File.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="favorite">
+        <img src="img/favourite.png" alt="pink heart" />
+        <p>my favorites</p>
+      </div>
+      <header class="header">
+        <h1 class="title">Find your movie</h1>
+        <form action="#" class="search-form" name="search">
+          <label class="label" for="title">Name </label>
+          <input
+            value=""
+            class="input"
+            type="text"
+            name="title"
+            id="tite"
+            required
+          />
+          <label class="label" for="year"> Year</label>
+          <input value="" class="input" type="text" name="year" id="year" />
+          <label class="label" for="type">Select type</label>
+          <select class="input" name="type" id="type">
+            <option value="" hidden></option>
+            <option value="movie">movie</option>
+            <option value="series">series</option>
+          </select>
+          <button type="submit" class="button form-button">Find</button>
+        </form>
+      </header>
+    </div>
+    <div class="list__wrapper">
+      <div class="movieList"></div>
+      <div class="button__wrapper">
+        <button class="button button--prev">PREV</button>
+        <button class="button button--next">NEXT</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <title>Maps</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form" action="#" name="form">
+        <label class="label" for="a">Enter your start point</label>
+        <input class="input input--a" type="text" id="a" name="origin" />
+        <label class="label" for="b">Enter your destination</label>
+        <input class="input input--b" type="text" id="b" name="destination" />
+        <label class="label" for="c">Choose your way</label>
+        <select class="input input--c" name="type" id="c">
+          <option value="" hidden></option>
+          <option value="DRIVING">driving</option>
+          <option value="BICYCLING">bicycling</option>
+          <option value="TRANSIT">transit</option>
+          <option value="WALKING">walking</option>
+        </select>
+        <button class="button" type="submit" name="submit">Enter</button>
+      </form>
+      <div class="map" id="map"></div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb0FMROOcJr6NXjkI0IH_SKv6X665jnMs&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

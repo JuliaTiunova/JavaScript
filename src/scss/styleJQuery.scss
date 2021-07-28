@@ -1,0 +1,36 @@
+@import "fonts";
+@import "colors";
+@import "button";
+@import "bg";
+@import "card";
+@import "footer";
+@import "header";
+@import "info";
+@import "menu";
+@import "text";
+@import "title";
+@import "screen";
+
+.link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: $inactive;
+  text-transform: uppercase;
+
+  &--next {
+    top: 50px;
+  }
+  &:hover {
+    color: $active;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}

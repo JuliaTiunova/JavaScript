@@ -1,0 +1,25 @@
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $inactive;
+
+  &--details {
+    font-size: 14px;
+    color: $active;
+    line-height: 17px;
+  }
+
+  &--sale {
+    color: $sale-yellow;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+  }
+
+  &--price {
+    font-size: 32px;
+    line-height: 38px;
+    color: $active;
+  }
+}

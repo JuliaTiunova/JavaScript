@@ -1,0 +1,16 @@
+.footer {
+  &__sale {
+    margin-bottom: 4px;
+  }
+
+  &__button {
+    margin-left: 32px;
+
+    &--rating {
+      margin-left: 0;
+    }
+  }
+  &--rating {
+    display: flex;
+  }
+}

@@ -1,0 +1,245 @@
+$blue-dark: #072446;
+$blue-mid: #023a67;
+$blue-bright: #035083;
+$grey: #d1d1d1;
+$white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  padding: 30px 100px 0;
+  background: url(../img/felix-mooneeram-evlkOfkQ5rE-unsplash.jpeg) center
+    center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.favorite {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-image: linear-gradient(
+    to right,
+    #ffffff00 0%,
+    #006bb360 51%,
+    #ffffff00 100%
+  );
+  background-size: 200% auto;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: #ffffff;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 18px;
+
+  & img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-position: right center;
+  }
+}
+
+.header {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 78px;
+  color: $white;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px $white, 0 0 8px $grey;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.search-form {
+  font-family: "Baloo Tammudu 2", sans-serif;
+
+  font-size: 24px;
+  color: $white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 15px 50px 25px;
+  border: 1px solid $blue-dark;
+  box-shadow: 0 0 5px 2px $blue-dark;
+  border-radius: 10px;
+}
+
+.button {
+  text-align: center;
+  padding: 12px 0 5px;
+  min-width: 150px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    $blue-dark 0%,
+    $blue-mid 51%,
+    $blue-dark 100%
+  );
+  color: #fefefe;
+  background-size: 200% auto;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 38px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+
+  &:hover {
+    outline: none;
+    cursor: pointer;
+    background-position: right center;
+  }
+
+  &__wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  &--prev {
+    margin-right: 5px;
+    display: none;
+  }
+
+  &--next {
+    margin-left: 5px;
+    display: none;
+  }
+
+  &--love {
+    background: url(../img/favourite_blank.png) center center no-repeat;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    transition: 0.3s;
+
+    &.clicked {
+      background: url(../img/favourite.png) center center no-repeat;
+      background-size: contain;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.form-button {
+  margin-top: 25px;
+}
+
+.label {
+  margin-bottom: -10px;
+}
+.input {
+  height: 50px;
+  font-size: 24px;
+  border: 0;
+  border: 2px solid $blue-bright;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  color: $blue-dark;
+
+  &:focus {
+    border: 2px solid $blue-dark;
+    box-shadow: 0 0 5px 1px $blue-mid;
+  }
+}
+
+.scroll {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+  color: $white;
+  text-shadow: 2px 2px $blue-dark, -2px -2px $blue-mid;
+}
+
+.list__wrapper {
+  background: fixed url(../img/denise-jans-xq1eWTas_a0-unsplash.jpeg) no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.movieList {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  padding-top: 20px;
+  color: $blue-dark;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  margin: 10px 0;
+  color: $blue-dark;
+  text-shadow: 2px 2px $white;
+}
+
+.movie {
+  padding: 30px 100px;
+}
+
+.button-details {
+  padding: 3px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.details {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #ffffff04 0%, #ffffffee 100%);
+
+  & img {
+    box-shadow: 0 0 10px 2px $blue-dark;
+  }
+}
+.info-wrapper {
+  width: 50%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  justify-content: space-around;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  font-size: 18px;
+}
+
+.plot {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+}

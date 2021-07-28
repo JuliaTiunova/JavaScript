@@ -1,0 +1,18 @@
+.title {
+  font-weight: 400;
+  color: $active;
+  font-size: 32px;
+  line-height: 38.4px;
+  &--small {
+    color: $inactive;
+    opacity: 0.7;
+    font-size: 16px;
+    margin: 0;
+    line-height: 19.2px;
+
+    .item--active & {
+      color: $active;
+      opacity: 1;
+    }
+  }
+}

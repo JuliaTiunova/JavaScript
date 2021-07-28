@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 30px 100px 0;
+  background: url(../img/felix-mooneeram-evlkOfkQ5rE-unsplash.jpeg) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.favorite {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff00), color-stop(51%, #006bb360), to(#ffffff00));
+  background-image: linear-gradient(to right, #ffffff00 0%, #006bb360 51%, #ffffff00 100%);
+  background-size: 200% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.favorite img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.favorite:hover {
+  cursor: pointer;
+  background-position: right center;
+}
+
+.header {
+  height: 100vh;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 78px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #ffffff, 0 0 8px #d1d1d1;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.search-form {
+  font-family: "Baloo Tammudu 2", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  padding: 15px 50px 25px;
+  border: 1px solid #072446;
+  -webkit-box-shadow: 0 0 5px 2px #072446;
+          box-shadow: 0 0 5px 2px #072446;
+  border-radius: 10px;
+}
+
+.button {
+  text-align: center;
+  padding: 12px 0 5px;
+  min-width: 150px;
+  border: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072446), color-stop(51%, #023a67), to(#072446));
+  background-image: linear-gradient(to right, #072446 0%, #023a67 51%, #072446 100%);
+  color: #fefefe;
+  background-size: 200% auto;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 38px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  outline: none;
+  cursor: pointer;
+  background-position: right center;
+}
+
+.button__wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+}
+
+.button--prev {
+  margin-right: 5px;
+  display: none;
+}
+
+.button--next {
+  margin-left: 5px;
+  display: none;
+}
+
+.button--love {
+  background: url(../img/favourite_blank.png) center center no-repeat;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button--love.clicked {
+  background: url(../img/favourite.png) center center no-repeat;
+  background-size: contain;
+}
+
+.button--love:hover {
+  cursor: pointer;
+}
+
+.button--love:active {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.form-button {
+  margin-top: 25px;
+}
+
+.label {
+  margin-bottom: -10px;
+}
+
+.input {
+  height: 50px;
+  font-size: 24px;
+  border: 0;
+  border: 2px solid #035083;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  color: #072446;
+}
+
+.input:focus {
+  border: 2px solid #072446;
+  -webkit-box-shadow: 0 0 5px 1px #023a67;
+          box-shadow: 0 0 5px 1px #023a67;
+}
+
+.scroll {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px #072446, -2px -2px #023a67;
+}
+
+.list__wrapper {
+  background: fixed url(../img/denise-jans-xq1eWTas_a0-unsplash.jpeg) no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.movieList {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  padding-top: 20px;
+  color: #072446;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  margin: 10px 0;
+  color: #072446;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.movie {
+  padding: 30px 100px;
+}
+
+.button-details {
+  padding: 3px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.details {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 20px;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffffff04), to(#ffffffee));
+  background-image: linear-gradient(to right, #ffffff04 0%, #ffffffee 100%);
+}
+
+.details img {
+  -webkit-box-shadow: 0 0 10px 2px #072446;
+          box-shadow: 0 0 10px 2px #072446;
+}
+
+.info-wrapper {
+  width: 50%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Baloo Tammudu 2", sans-serif;
+  font-size: 18px;
+}
+
+.plot {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
